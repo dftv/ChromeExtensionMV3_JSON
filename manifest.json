@@ -1,0 +1,28 @@
+{
+    //MV3 extension structure :: https://developer.chrome.com/docs/extensions/mv3/manifest/ 
+
+    //Extension basic information ::
+    "name": "Extension name",
+    "description": "Extension description",
+    "version": "0.0",
+    "manifest_version": 3,
+    
+    //Extension actions :: https://developer.chrome.com/docs/extensions/reference/action/
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Extension title",
+        "default_icon": "extension_icon.png"
+    },
+    "options_page": "options.html",
+
+    //Extension scripts :: https://developer.chrome.com/docs/extensions/mv3/service_workers/
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    //Extension commands :: https://developer.chrome.com/docs/extensions/reference/commands/
+    "commands": {},
+
+    //Extension permissions :: https://developer.chrome.com/docs/extensions/mv3/declare_permissions/
+    "permissions": []
+}
